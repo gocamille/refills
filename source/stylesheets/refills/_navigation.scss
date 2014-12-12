@@ -73,7 +73,7 @@ header.navigation {
     }
   }
 
-  ul#navigation-menu {
+  ul.navigation-menu {
     -webkit-transform-style: preserve-3d; // stop webkit flicker
     clear: both;
     display: none;
@@ -82,6 +82,10 @@ header.navigation {
     padding: 0;
     width: 100%;
     z-index: 9999;
+
+    &.show {
+      display: block;
+    }
 
     @include media ($horizontal-bar-mode) {
       display: inline;
